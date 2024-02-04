@@ -142,7 +142,7 @@ window.addEventListener("load", () => {
         all_task.innerText = count;
       });
     }
-    // input_text.value = "";
-    // fromdate.value = "";
+    input_text.value = "";
+    fromdate.value = "";
   });
 });
