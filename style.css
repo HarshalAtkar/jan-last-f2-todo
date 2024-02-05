@@ -14,7 +14,7 @@ body{
 }
 .main_container{
     background-color: rgb(32, 30, 30);
-    height: 100vh;
+    height: 80vh;
     padding-inline: 20vw;
 }
     
@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 20vh;
 }
 #from{
     display: flex;
