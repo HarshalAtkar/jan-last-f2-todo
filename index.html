@@ -7,20 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="logo_container">
+      <img src="./icon/Logo.svg" alt="Todo" />
+    </header>
     <section class="main_container">
-      <header class="logo_container">
-        <img src="./icon/Logo.svg" alt="Todo" />
-      </header>
-     
       <main>
         <form id="from">
           <input
             type="text"
             placeholder="Enter Your To-do List Task"
-            id="input_text"required
+            id="input_text"
+            required
           />
-          <input type="date" id="date" required>
-          <select name="priority" id="priority">
+          <!-- <div class="datediv"> -->
+          <!-- <label for="" id="date-label">Due Date</label> -->
+          <input type="date" id="date" placeholder="Date" required />
+
+          <!-- </div> -->
+          <select name="priority" id="priority" placeholder="Priority">
             <option value="heigh">Priority</option>
             <option value="heigh">Heigh</option>
             <option value="medium">Medium</option>
@@ -31,6 +35,18 @@
             Add
             <img src="./icon/plus.svg" alt="" />
           </button>
+
+          <!-- search and filter -->
+          <!-- <div class="filter_div">
+          <input type="text" id="search">
+          <select name="filter-priority" id="filter-priority">
+            <option value="all">Filter Priority</option>
+            <option value="all">All</option>
+            <option value="heigh">Heigh</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div> -->
         </form>
         <!-- new task container -->
         <section class="newtasks">
@@ -70,9 +86,7 @@
             </div>
           </div>
 
-          <div class="startedadd">
-
-          </div>
+          <div class="startedadd"></div>
         </section>
         <div class="line"></div>
 
@@ -89,8 +103,7 @@
             </div>
           </div>
 
-          <div class="completedadd">
-          </div>
+          <div class="completedadd"></div>
         </section>
         <div class="line"></div>
       </main>
@@ -98,5 +111,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-

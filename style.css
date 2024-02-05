@@ -96,15 +96,10 @@ body{
    border-radius: 100px;
 
 }
-.newtask{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.newtask {
     padding: 10px;
     border-radius: 10px;
     border: 2px solid rgb(93, 93, 93);
-    gap:10px;
-    /* height: px; */
     width: 100%;
     background-color: rgb(39, 40, 40);
     margin-top: 10px;
@@ -112,19 +107,38 @@ body{
     color: aliceblue;
 
 }
+.newtask2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap:10px;
+    width: 100%;
+    background-color: rgb(39, 40, 40);
+    color: aliceblue;
+
+}
 .newtasktext{
    border:none;
     background-color: rgb(39, 40, 40);
     color: aliceblue;
-    height: 100%;
+    /* height: 100%; */
+    width:100%;
     flex-grow: 1;
 
 }
 .none{
     display: none;
 }
-#date{
+#date,.datediv{
     height: 40px;
+    border-radius: 5px;
+    border: none;;
+    color: rgba(177, 187, 196, 0.813);
+    background-color: rgb(62, 60, 60);
+}
+#date-label ,.priorityshow{
+    height: 100%;
     border-radius: 5px;
     border: none;;
     color: rgba(177, 187, 196, 0.813);
@@ -137,7 +151,7 @@ body{
     color: rgb(187, 194, 198);
     background-color: rgb(62, 60, 60);
 }
-#priority1{
+#priority1 {
     height: 30px;
     border-radius: 5px;
     border: none;;
@@ -156,3 +170,14 @@ body{
     background-color: rgb(40, 115, 200)
 
 }
+.date_priority{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .main_container {
+    padding-inline: 20px;
+    }
+    }
